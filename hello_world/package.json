@@ -1,0 +1,19 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "docker build -t 216159606323.dkr.ecr.us-east-1.amazonaws.com/shangrila:hello-world . --build-arg NPM_TOKEN=cc5b6c7f-f461-37d6-b7b2-57b107c5c1fa",
+    "push": "docker push 216159606323.dkr.ecr.us-east-1.amazonaws.com/shangrila:hello-world",
+    "start": "node index.js",
+    "start-dev": "node -r dotenv/config index.js dotenv_config_path=./vars.env",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {    
+  }
+}
